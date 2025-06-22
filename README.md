@@ -12,7 +12,9 @@ This script is the primary pipeline for converting Medtronic JSON files into a s
     - **Streaming** 
     - **Montages**
 - Organizes extracted information into per-patient substructures.
+
 ---
+
 #### 📂 Folder and Data Structure
 - Creates or updates a `DBS_data.mat` file in the chosen folder.
 - Organizes data in a nested struct - DBS_data.Patient_XX.(Data Type).
@@ -25,8 +27,8 @@ This script is the primary pipeline for converting Medtronic JSON files into a s
 | 00:20 |             |             |      |              |
 | ..... |             |             |      |              |
 | 23:50 |             |             |      |              |
-* The 10 minute increments are the result of the device's LFP home sensing temporal resolution. A round down from the exact measurement time is made to create the table.
-* This way, the data is continuous and comparable across types, patients, hemispheres.
+* The 10-minute increments are the result of the device's LFP home sensing temporal resolution. A rounding down from the exact measurement time is made to create the table.
+* This way, the data is continuous and comparable across types, patients, and hemispheres.
 * Similar tables are also created for:
   - Stimulation Amplitude
   - Stimulation Pulse Width
@@ -37,8 +39,6 @@ This script is the primary pipeline for converting Medtronic JSON files into a s
 
 ## Data Plotting - Main_Plot_Figures.m
 This script provides a modular interface for **visualizing neural and stimulation data** extracted into `DBS_data.mat`. In it we use a set of plotting functions to explore the data.
-
----
 
 ###  Available Plotting Functions
 
@@ -112,8 +112,6 @@ This script provides a modular interface for **visualizing neural and stimulatio
 
 SF = Sensing Frequency
 
----
-
 #### 6. `Periodogram_Plot`
 **Generates PSD plots** across multiple days to reveal underlying oscillatory patterns.
 
@@ -128,14 +126,15 @@ SF = Sensing Frequency
 
 
 ---
+
 ## 🚀 How to Run
 You can run the script interactively in MATLAB. It will prompt you for:
 - A target folder (if `use_current_path == 0`, otherwise the file's folder will be used)
 - A folder or file selection depending on `Process_all`:
-  - If `Process_all=false` : You will be prompted to select only one JSON file you would like to process.
-  - If `Process_all=false` : You will be prompted to select a folder. All JSON files in that folder, or in it's sub folders will be processed.
+  - If `Process_all=false`: You will be prompted to select only one JSON file you would like to process.
+  - If `Process_all=false`: You will be prompted to select a folder. All JSON files in that folder, or in its subfolders, will be processed.
     
-To begin the process open `Main_Extract_Data.m`, select the options that fit your needs and run the file. 
+To begin the process, open `Main_Extract_Data.m`, select the options that fit your needs, and run the file. 
 This will process the files, print progress messages, and update or create the DBS structure file.
 
 For plotting:
