@@ -109,6 +109,7 @@ This script provides a modular interface for **visualizing neural and stimulatio
 `LFP_Daily_Plot(DBS_data, 'Patient_1', 'Left', [13 30], [1 60], 'Show_Events', true, 'Plot_TEED', false);`
 
 ![image](https://github.com/user-attachments/assets/98d777fe-3ab7-4d8f-9aeb-082b8f1bdbef)
+SF = Sensing Frequency
 ---
 
 #### 6. `Periodogram_Plot`
