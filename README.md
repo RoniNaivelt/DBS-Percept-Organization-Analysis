@@ -64,6 +64,8 @@ This script provides a modular interface for **visualizing neural and stimulatio
 >**Example:**
 `Heatmap_Plot(DBS_data, 'Patient_1', 'Right', [1 20]);`
 
+![image](https://github.com/user-attachments/assets/547e8793-f21c-4498-ad6d-f962ec977ba9)
+
 #### 3. `Histogram_Plot`
 **Plots distributions** of LFP amplitudes:
 - Left vs Right
