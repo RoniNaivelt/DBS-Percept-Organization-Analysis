@@ -142,4 +142,21 @@ For plotting:
 2. Open `Main_Plot_Figures.m`.
 3. Modify the script to call the plot functions you want to run.
 4. Run the script or individual sections from MATLAB.
- - All plotting functions can be ran manually, they are in `Plot Functions/`
+ - All plotting functions can be run manually; they are in `Plot Functions/`
+
+
+## Contribution and Citations
+This toolbox was created by Roni Naivelt and Maya Zutta (Tel-Aviv University), with the support of Dr. Inbal Maidan (Neurological Department - Soroka Medical Center).
+
+
+## Lisence 
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+This toolbox is free to use for non-commercial research and academic purposes.
+If you use this toolbox in your work, please cite:
+
+Naivelt, R. et al. (2025). Real-world recording of subthalamic local field potentials: circadian, medication, and DBS effects in Parkinson’s Disease.
+
+You are free to:
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material
+
