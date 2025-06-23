@@ -1,3 +1,6 @@
+A toolbox created for the analysis of JSON files extracted from the Medtronic Percept device.
+
+
 ## Data Extraction - Main_Extract_Data.m
 This script is the primary pipeline for converting Medtronic JSON files into a structured MATLAB-based **DBS (Deep Brain Stimulation) data structure**.
 
